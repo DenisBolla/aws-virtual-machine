@@ -11,7 +11,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "aws-vm-tfstate-kledsonbasso"
+    bucket       = "tfstate-denisbolla2"
     key          = "tfstate"
     region       = "us-east-1"
     use_lockfile = true
