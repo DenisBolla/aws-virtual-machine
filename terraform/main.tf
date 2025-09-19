@@ -1,15 +1,15 @@
 # Definição do módulo de rede
 module "network" {
-  source = "./network"
+  source = "./modules/network"  # Atualizado para o caminho correto
 }
 
 # Definição do módulo de VM
 module "vm" {
-  source             = "./vm"
-  subnet_id          = module.network.subnet_id         # Referência ao subnet_id do módulo network
-  security_group_id  = module.network.security_group_id # Referência ao security_group_id do módulo network
-  ami                = "ami-0c101f26f147fa7fd"         # Substitua pela sua AMI
-  instance_type      = "t2.micro"                       # Substitua pelo tipo de instância desejado
+  source             = "./modules/vm"  # Atualizado para o caminho correto
+  subnet_id          = module.network.subnet_id
+  security_group_id  = module.network.security_group_id
+  ami                = "ami-0c101f26f147fa7fd"
+  instance_type      = "t2.micro"
 }
 
 # Outputs principais para exibir informações após a execução
