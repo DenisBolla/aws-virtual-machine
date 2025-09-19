@@ -3,7 +3,7 @@ provider "aws" {
   region = "us-east-1" # Substitua pela sua região
 }
 
-# Configuração do Terraform
+
 terraform {
   required_version = ">= 1.13.1"
 
