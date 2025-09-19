@@ -1,6 +1,6 @@
 # Configuração do Provider AWS
 provider "aws" {
-  region = "us-east-1"  # Substitua pela sua região
+  region = "us-east-1" # Substitua pela sua região
 }
 
 # Configuração do Terraform
@@ -15,9 +15,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "tfstate-denisbolla2"  # Nome do bucket S3
-    key          = "tfstate"              # Caminho para o estado no S3
-    region       = "us-east-1"            # Região onde o S3 está localizado
-    use_lockfile = true                   # Para garantir que o estado seja bloqueado ao aplicar
+    bucket       = "tfstate-denisbolla2" # Nome do bucket S3
+    key          = "tfstate"             # Caminho para o estado no S3
+    region       = "us-east-1"           # Região onde o S3 está localizado
+    use_lockfile = true                  # Para garantir que o estado seja bloqueado ao aplicar
   }
 }
