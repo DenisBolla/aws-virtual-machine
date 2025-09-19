@@ -33,7 +33,7 @@ resource "aws_route_table_association" "public" {
   route_table_id = aws_route_table.public.id
 }
 
-# SECURITY GROUP
+
 resource "aws_security_group" "public" {
   name   = var.sg_name
   vpc_id = aws_vpc.this.id
