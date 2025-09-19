@@ -9,3 +9,8 @@ output "public_ip" {
   description = "Endereço IP público da instância"
   value       = aws_instance.this.public_ip
 }
+
+output "public_dns" {
+  description = "Endereço DNS público da instância"
+  value       = aws_instance.this.public_dns
+}
