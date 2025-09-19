@@ -1,7 +1,6 @@
-
 # USER DATA (script para inicialização)
 data "template_file" "user_data" {
-  template = file("${path.module}/../scripts/user_data.sh")
+  template = file("${path.root}/scripts/user_data.sh")  # Caminho corrigido para a raiz do projeto
 }
 
 # EC2 INSTANCE
