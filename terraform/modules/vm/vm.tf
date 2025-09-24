@@ -1,4 +1,4 @@
-# USER DATA (script para inicialização)
+
 data "template_file" "user_data" {
   template = file("${path.root}/scripts/user_data.sh") # Caminho corrigido para a raiz do projeto
 }
